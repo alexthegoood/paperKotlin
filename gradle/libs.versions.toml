@@ -6,8 +6,8 @@ kotlinx-atomicfu = "0.32.1"
 kotlinx-datetime = "0.7.1"
 kotlinx-io = "0.9.0"
 
-paper-api = "26.1.1.build.14-alpha"
-minecraft = "26.1.1"
+paper-api = "1.21.11-R0.1-SNAPSHOT"
+minecraft = "1.21.11"
 
 paperweight-userdev = "2.0.0-beta.21"
 shadow = "9.4.1"
