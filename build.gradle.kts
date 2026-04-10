@@ -4,6 +4,7 @@ typealias Load = BukkitPluginYaml.PluginLoadOrder
 
 plugins {
     kotlin("jvm") version libs.versions.kotlin.get()
+    kotlin("plugin.serialization") version libs.versions.kotlin.get()
     alias(libs.plugins.paperweight.userdev)
     alias(libs.plugins.shadow)
     alias(libs.plugins.run.paper)
@@ -21,7 +22,7 @@ dependencies {
 }
 
 paperPluginYaml {
-    main = "com.alexthegoood.paperKotlin.PaperKotlin"
+    main = "$group.paperKotlin.PaperKotlin"
     apiVersion = libs.versions.minecraft.get()
 
     load = Load.STARTUP
@@ -30,7 +31,7 @@ paperPluginYaml {
 }
 
 kotlin {
-    jvmToolchain(21)
+    jvmToolchain(25)
 }
 
 tasks {
